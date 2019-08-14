@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='senateStarter'>senateStarter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container" style="font-family:comic sans ms">
+        <div class="row">
+            <div class="col-8">
+                <img src="logo.png" alt="" width="100">
+                <font size="6">TGIF</font>
+            </div>
+            <div class="col align-self-end">
+                <img src="mail.jpg" alt="logo" width="40">
+                <a href="https://www.w3schools.com" target="_blank">info@tgif.net
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="container" style="font-family:comic sans ms">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" onclick="location.href ='Index.html'">Home
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Congress 113
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="senate-starter-page-ajax.html">Senate</a>
+                            <a class="dropdown-item" href="house-starter-page-ajax.html">House</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Attendance
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="senate-attendance-page-ajax.html">Senate</a>
+                            <a class="dropdown-item" href="house-attendance-page-ajax.html">House</a>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Loyality
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="senate-party-loyalty-page-ajax.html">Senate</a>
+                            <a class="dropdown-item" href="house-party-loyalty-page-ajax.html">House</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container" style="font-family:comic sans ms">
+        <div class="row">
+            <div class="col">
+                <h2>Senators</h2>
+                <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="font-family:comic sans ms">
+        <div class="row">
+            <div class="col-sm-9">
+                <p> Filter by Party:
+                    <label>
+                        <input type="checkbox" name="myCheckbox" value='R'> Republican </label>
+                    <label>
+                        <input type="checkbox" name="myCheckbox" value='D'> Democrats</label>
+                    <label>
+                        <input type="checkbox" name="myCheckbox" value='I'> Independent</label>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <select id="mySelect">
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <table class="table" id="myTable">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Full Nmae</th>
+                    <th scope="col">Party</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Seniority</th>
+                    <th scope="col">Vote%</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <br>
+    <nav class="navbar navbar-dark bg-dark" style="font-family:comic sans ms">
+        <font color="white">&copy; 2016 TGIF | Rights Reserved </font>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js">
+    </script>
+</body></html>

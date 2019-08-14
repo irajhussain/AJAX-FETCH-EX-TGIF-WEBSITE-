@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title id='senateAttendance'>senateAttendance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container" style="font-family:comic sans ms">
+        <div class="row">
+            <div class="col-8">
+                <img src="logo.png" alt="" width="100">
+                <font size="6">TGIF</font>
+            </div>
+            <div class="col align-self-end">
+                <img src="mail.jpg" alt="logo" width="40">
+                <a href="https://www.w3schools.com" target="_blank">info@tgif.net
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="container" style="font-family:comic sans ms">
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" onclick="location.href ='Index.html'">Home
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Congress 113
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="senate-starter-page-ajax.html">Senate</a>
+                            <a class="dropdown-item" href="house-starter-page-ajax.html">House</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Attendance
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="senate-attendance-page-ajax.html">Senate</a>
+                            <a class="dropdown-item" href="house-attendance-page-ajax.html">House</a>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Loyality
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="senate-party-loyalty-page-ajax.html">Senate</a>
+                            <a class="dropdown-item" href="house-party-loyalty-page-ajax.html">House</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div>
+        </div>
+    </header>
+    <br>
+    <div class="container" style="font-family:comic sans ms">
+        <div class="row">
+            <div class="col-sm-6">
+
+
+                <h2>Attendance</h2>
+                <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+                <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+            </div>
+            <div class="col">
+                <h2>Senate at a glance</h2>
+                <table class="table" id="nofRep">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Party</th>
+                            <th>Number of Reps</th>
+                            <th>% Voted with Prty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Republican</td>
+                            <td id="rc"></td>
+                            <td id="rp">--</td>
+                        </tr>
+                        <tr>
+                            <td>Democrat</td>
+                            <td id="dc"></td>
+                            <td id="dp">--</td>
+                        </tr>
+                        <tr>
+                            <td>Independent</td>
+                            <td id="ic"></td>
+                            <td id="ip">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container" style="font-family:comic sans ms">
+        <div class="row">
+            <div class="col">
+                <h2>Most Engaged (Top 10% Attendance)</h2>
+                <br>
+                <table class="table" id="mEtable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Missed Votes</th>
+                            <th>% Missed</th>
+                        </tr>
+                    </thead>
+
+                </table>
+                <br>
+                <h2>Least Engaged (Bottom 10% Attendance)</h2>
+                <br>
+                <table class="table" id="lEtable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Missed Votes</th>
+                            <th>% Missed</th>
+                        </tr>
+                    </thead>
+
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <nav class="navbar navbar-dark bg-dark" style="font-family:comic sans ms">
+        <font color="white">&copy; 2016 TGIF | Rights Reserved </font>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js">
+    </script>
+</body></html>
